@@ -24,7 +24,7 @@ export default () => {
             const { value, error } = result;
             const valid = error == null;
             if (valid) {
-                console.log(value)
+                // console.log(value)
                 await webhooks.contactSubmission(value);
                 res.json({success: true});
             } else {
@@ -36,7 +36,7 @@ export default () => {
             }
 
         } catch (e) {
-            console.log(e)
+            // console.log(e)
             res.status(424)
             res.json({success: false});
         }

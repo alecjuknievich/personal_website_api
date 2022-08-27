@@ -27,7 +27,7 @@ class Webhooks {
                 await this.discordWebhook(webhookConfig.discordLog, body);
                 resolve(true);
             } catch (e) {
-                console.log(e);
+                // console.log(e);
                 reject(e);
             }
         })
