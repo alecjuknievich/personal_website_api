@@ -16,13 +16,10 @@ class Webhooks {
                     embeds: [{
                         color: 3313216,
                         timestamp: new Date(),
-                        author: {
-                            name: `${submission.email}`,
-                        },
                         fields: [
                             {
                                 name: `${submission.subject}`,
-                                value: `${submission.message}`
+                                value: `${submission.message} \n \n Phone: ${submission.phone} \n Email: ${submission.email}`
                             }
                         ]
                     }]

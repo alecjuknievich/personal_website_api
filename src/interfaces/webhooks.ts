@@ -1,6 +1,7 @@
 
 export interface ContactSubmission {
-    email: string;
-    message: string;
-    subject: string;
+    email?: string;
+    phone?: string;
+    message?: string;
+    subject?: string;
 }

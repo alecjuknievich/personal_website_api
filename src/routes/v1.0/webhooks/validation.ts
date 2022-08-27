@@ -1,7 +1,8 @@
 import Joi from "joi";
 
 export const validateContactSubmission = Joi.object({
-    email: Joi.string().required(),
-    subject: Joi.string().required(),
-    message: Joi.string().required()
+    email: Joi.string().optional(),
+    phone: Joi.string().optional(),
+    subject: Joi.string().optional(),
+    message: Joi.string().optional()
 });
